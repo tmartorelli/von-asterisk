@@ -1,0 +1,1 @@
+CREATE TABLE vonage.outcomes(_id INTEGER  PRIMARY KEY AUTOINCREMENT, date_time TEXT NOT NULL, inputs TEXT NOT NULL, subtraction INTEGER);
