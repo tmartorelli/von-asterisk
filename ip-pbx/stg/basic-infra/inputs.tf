@@ -25,3 +25,7 @@ variable "instance_type" {
 variable "key_pair" {
   type = string
 }
+
+variable "image_id" {
+  type = string
+}

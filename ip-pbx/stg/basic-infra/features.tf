@@ -27,7 +27,7 @@ module "ec2" {
   availability_zones        = var.availability_zones
   force_delete              = false
   health_check_grace_period = 300
-  image_id                  = data.aws_ami.ami.id
+  image_id                  = var.image_id
   instance_type             = var.instance_type
   key_pair                  = var.key_pair
   max_size                  = 1

@@ -2,7 +2,7 @@
 
 yum update -y
 
-cat /etc/systemd/system/asterisk.service <<-EOF
+cat > /etc/systemd/system/asterisk.service << EOF
 [Unit]
 Description=Asterisk PBX and telephony daemon
 Documentation=man:asterisk(8)
@@ -27,7 +27,7 @@ RestartSec=10
 WantedBy=multi-user.target
 EOF
 
-systemctl deamon-reload
+systemctl daemon-reload
 systemctl enable asterisk
 systemctl restart asterisk
 
