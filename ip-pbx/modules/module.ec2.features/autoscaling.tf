@@ -25,7 +25,7 @@ resource "aws_autoscaling_group" "asg_voip_server" {
 }
 
 resource "aws_launch_configuration" "lc_voip_server" {
-  name = "${var.project}-${var.env}-lc"
+  name_prefix = "${var.project}-${var.env}-lc"
   image_id = var.image_id
   instance_type = var.instance_type
   iam_instance_profile = aws_iam_instance_profile.voip_instance_profile.name
@@ -44,12 +44,3 @@ resource "aws_launch_configuration" "lc_voip_server" {
     create_before_destroy = true
   }
 }
-
-//resource "aws_eip" "voip_server_eip" {
-//  vpc = true
-//
-//  tags = {
-//    Name = "${var.project}-${var.env}-eip"
-//    Environment = var.env
-//  }
-//}
