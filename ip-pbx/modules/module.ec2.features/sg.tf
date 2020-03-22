@@ -11,9 +11,9 @@ resource "aws_security_group" "voip_sg" {
   }
 
   ingress {
-    from_port = 16374
+    from_port = 10000
     protocol = "UDP"
-    to_port = 32767
+    to_port = 20000
     cidr_blocks = ["0.0.0.0/0"]
   }
 
