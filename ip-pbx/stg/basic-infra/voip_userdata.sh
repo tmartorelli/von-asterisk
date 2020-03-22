@@ -29,6 +29,7 @@ EOF
 
 systemctl daemon-reload
 systemctl enable asterisk
+sed -i -E 's/^externip=[0-9\.]+$/externip='$(curl http://169.254.169.254/latest/meta-data/public-ipv4) sip.conf
 systemctl restart asterisk
 
 

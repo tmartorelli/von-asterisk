@@ -7,3 +7,4 @@ key_pair           = "eu-west-1-ip-pbx-stg-voip"
 instance_type      = "t3.nano"
 image_id           = "ami-022a3cbe0161e137b"
 
+

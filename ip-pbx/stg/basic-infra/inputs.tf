@@ -29,3 +29,4 @@ variable "key_pair" {
 variable "image_id" {
   type = string
 }
+
