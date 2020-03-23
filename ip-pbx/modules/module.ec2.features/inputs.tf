@@ -1,17 +1,5 @@
-variable "availability_zones" {
-  type = list(string)
-}
-
-variable "max_size" {
-  type = number
-}
-
-variable "min_size" {
-  type = number
-}
-
-variable "force_delete" {
-  type = bool
+variable "availability_zone" {
+  type = string
 }
 
 variable "project" {
@@ -30,12 +18,8 @@ variable "instance_type" {
   type = string
 }
 
-variable "voip_subnets_id" {
-  type = list(string)
-}
-
-variable "health_check_grace_period" {
-  type = number
+variable "voip_subnet_id" {
+  type = string
 }
 
 variable "voip_userdata" {
@@ -56,5 +40,9 @@ variable "instance_root_volume_size" {
 }
 
 variable "vpc_id" {
+  type = string
+}
+
+variable "aws_region" {
   type = string
 }

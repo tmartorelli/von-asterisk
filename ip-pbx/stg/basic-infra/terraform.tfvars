@@ -1,4 +1,4 @@
-availability_zones = ["a"]
+availability_zone = "a"
 vpc_cidr_block     = "10.0.0.0/24"
 public_cidrs_ipv4  = ["10.0.0.0/27"]
 env                = "stg"

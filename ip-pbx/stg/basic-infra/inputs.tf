@@ -1,5 +1,5 @@
-variable "availability_zones" {
-  type = list(string)
+variable "availability_zone" {
+  type = string
 }
 
 variable "vpc_cidr_block" {

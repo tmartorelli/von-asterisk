@@ -10,8 +10,8 @@ variable "public_cidrs_ipv4" {
   type = list(string)
 }
 
-variable "availability_zones" {
-  type = list(string)
+variable "availability_zone" {
+  type = string
 }
 
 variable "env" {

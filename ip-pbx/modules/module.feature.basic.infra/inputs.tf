@@ -14,8 +14,8 @@ variable "public_cidrs_ipv4" {
   type = list(string)
 }
 
-variable "availability_zones" {
-  type = list(string)
+variable "availability_zone" {
+  type = string
 }
 
 variable "aws_region" {
@@ -23,5 +23,5 @@ variable "aws_region" {
 }
 
 variable "public_subnet_ids" {
-  type = list(string)
+  type = string
 }

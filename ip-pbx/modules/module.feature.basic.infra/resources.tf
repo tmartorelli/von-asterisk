@@ -10,7 +10,7 @@ module "vpc" {
 module "subnet" {
   source = "./subnets"
   aws_region = var.aws_region
-  availability_zones = var.availability_zones
+  availability_zone = var.availability_zone
   vpc_id = module.vpc.vpc_id
 
   public_cidrs_ipv4 = var.public_cidrs_ipv4
